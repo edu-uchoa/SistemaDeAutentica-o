@@ -10,8 +10,6 @@
 </head>
 <body>
     <div class="container">
-        <h1>Sistema de Autenticação</h1>
-        
         <!-- Seção de informações do usuário (visível apenas quando logado) -->
         <div id="user-info" class="hidden">
             <h2>Bem-vindo, <span id="user-name"></span>!</h2>
@@ -63,7 +61,7 @@
                 </div>
                 <button id="register-button">Cadastrar</button>
                 <div class="secondary-action">
-                    Já tem uma conta? <a id="switch-to-login">Faça login</a>
+                    <div style="color: white;">Já tem uma conta? <a id="switch-to-login">Faça login</a></div>
                 </div>
             </div>
             
@@ -80,6 +78,7 @@
             </div>
         </div>
     </div>
+<!--   
     <div class="hidden" id="algorithms">
         <div id="algo">
             <button></button>
@@ -89,7 +88,7 @@
         </div>
     </div>
     
-    <div id="ceaser-info" class="hidden">
+    <div id="ceaser-info" >
         <h2>Text Encryptor (Caesar Cipher)</h2>
         <div id="divPrincipal">
         
@@ -124,7 +123,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Importando Firebase -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>

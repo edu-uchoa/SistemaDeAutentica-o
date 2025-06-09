@@ -1,18 +1,21 @@
- body {
-            font-family: 'Arial', sans-serif;
-            max-width: 800px;
+ body {     
             margin: 0 auto;
             padding: 20px;
-            background-color: #f5f5f5;
+            background-color: #0c1221;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
         }
         .container {
-            background-color: white;
+            width: 800px;
+            background-color: #182138;         
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #333;
+            color: white;
             text-align: center;
             margin-bottom: 30px;
         }
@@ -29,8 +32,8 @@
             margin-bottom: 30px;
         }
         .auth-option-btn {
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #502eb8;
+            color: white;
             border: none;
             padding: 12px 25px;
             border-radius: 4px;
@@ -39,7 +42,7 @@
             transition: all 0.3s;
         }
         .auth-option-btn.active {
-            background-color: #4285f4;
+            background-color:  #feb32b;
             color: white;
         }
         .auth-form {
@@ -50,11 +53,13 @@
             margin-bottom: 20px;
         }
         label {
+            color: white;
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
         }
         input {
+            background-color: #262d35;
             width: 100%;
             padding: 10px;
             border: 1px solid #ddd;
@@ -62,7 +67,7 @@
             font-size: 16px;
         }
         button {
-            background-color: #4285f4;
+            background-color:  #feb32b;
             color: white;
             border: none;
             padding: 12px 20px;
@@ -73,7 +78,7 @@
             transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #3367d6;
+            background-color: #271074;
         }
         .secondary-action {
             text-align: center;
