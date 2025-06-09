@@ -13,6 +13,7 @@
         
         // Elementos da UI
         const userInfoElement = document.getElementById('user-info');
+        const algorithmInfoElement = document.getElementById('algorithms')
         const ceaserInfoElement = document.getElementById('ceaser-info')
         const authSectionElement = document.getElementById('auth-section');
         const userNameElement = document.getElementById('user-name');
@@ -203,7 +204,8 @@
             if (user) {
                 // Usuário está logado
                 userInfoElement.classList.remove('hidden');
-                ceaserInfoElement.classList.remove('hidden')
+                algorithmInfoElement.classList.remove('hidden');
+                //ceaserInfoElement.classList.remove('hidden')
                 authSectionElement.classList.add('hidden');
                 
                 // Exibe informações do usuário
@@ -212,8 +214,10 @@
             } else {
                 // Usuário não está logado
                 userInfoElement.classList.add('hidden');
-                ceaserInfoElement.classList.add('hidden')
+                algorithmInfoElement.classList.add('hidden');
+                //ceaserInfoElement.classList.add('hidden')
                 authSectionElement.classList.remove('hidden');
+
             }
         }
         

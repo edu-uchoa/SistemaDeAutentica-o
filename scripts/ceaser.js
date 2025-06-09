@@ -1,22 +1,5 @@
 
 
-
-const signOutButton = document.getElementById('sign-out-button');
-signOutButton.addEventListener('click', signOut);
-
-// Função para logout
-        function signOut() {
-            firebase.auth().signOut()
-                .then(() => {
-                    updateUI(null);
-                    switchAuthTab('login');
-                })
-                .catch((error) => {
-                    console.error('Erro ao fazer logout:', error);
-                });
-        }
-
-
 // Caesar Cipher Encryption 
 // This technique involves shifting the letters of the 
 // alphabet by a fixed number of places. 

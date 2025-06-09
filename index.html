@@ -6,6 +6,7 @@
     <title>Sistema de Autenticação</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/ceaser.css">
+    <link rel="stylesheet" href="styles/algorithms.css">
 </head>
 <body>
     <div class="container">
@@ -18,42 +19,7 @@
             <button id="sign-out-button">Sair</button>
             <button id="reset-password-button">Redefinir Senha</button>
         </div>
-        <div id="ceaser-info" class="hidden">
-            <h2>Text Encryptor (Caesar Cipher)</h2>
-            <div id="divPrincipal">
-            
-                <div id="div1">
-                    <label for="inputTextEncrypt">Enter text to encrypt:</label>
-                    <textarea id="inputTextEncrypt" rows="4"></textarea>
-                
-                    <label for="shiftEncrypt">Shift (number):</label>
-                    <input type="number" id="shiftEncrypt" value="3">
-            
-                    <button onclick="encryptText()">Encrypt</button>
-                    
-                    <div class="outputEncrypt">
-                        <strong>Result:</strong>
-                        <p id="outputTextEncrypt"></p>
-                    </div>
     
-                </div>
-            
-                <div id="div2">
-                    <label for="inputTextDecrypt">Enter text to decrypt:</label>
-                    <textarea id="inputTextDecrypt" rows="10"></textarea>
-                
-                    <label for="shiftDecrypt">Shift (number):</label>
-                    <input type="number" id="shiftDecrypt" value="3">
-                
-                    <button onclick="decryptText()">Decrypt</button>
-    
-                    <div class="outputDecrypt">
-                        <strong>Result:</strong>
-                        <p id="outputTextDecrypt"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
         
         <!-- Seção de autenticação (visível apenas quando deslogado) -->
         <div id="auth-section">
@@ -114,7 +80,51 @@
             </div>
         </div>
     </div>
-
+    <div class="hidden" id="algorithms">
+        <div id="algo">
+            <button></button>
+        
+       
+            <button></button>
+        </div>
+    </div>
+    
+    <div id="ceaser-info" class="hidden">
+        <h2>Text Encryptor (Caesar Cipher)</h2>
+        <div id="divPrincipal">
+        
+            <div id="div1">
+                <label for="inputTextEncrypt">Enter text to encrypt:</label>
+                <textarea id="inputTextEncrypt" rows="4"></textarea>
+            
+                <label for="shiftEncrypt">Shift (number):</label>
+                <input type="number" id="shiftEncrypt" value="3">
+        
+                <button onclick="encryptText()">Encrypt</button>
+                
+                <div class="outputEncrypt">
+                    <strong>Result:</strong>
+                    <p id="outputTextEncrypt"></p>
+                </div>
+    
+            </div>
+        
+            <div id="div2">
+                <label for="inputTextDecrypt">Enter text to decrypt:</label>
+                <textarea id="inputTextDecrypt" rows="10"></textarea>
+            
+                <label for="shiftDecrypt">Shift (number):</label>
+                <input type="number" id="shiftDecrypt" value="3">
+            
+                <button onclick="decryptText()">Decrypt</button>
+    
+                <div class="outputDecrypt">
+                    <strong>Result:</strong>
+                    <p id="outputTextDecrypt"></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Importando Firebase -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
